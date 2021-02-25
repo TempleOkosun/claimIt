@@ -9,6 +9,8 @@ Description
 5. The claim is resolved
 
 
+![alt text](state_diag_claimIt.png?raw=true)
+
 Car Accident Insurance Claim modeling
 A. State Data
 States: [“No accident”, “Claim Started”, “Claim Awaiting Submission”, “Claim Approved”, “Resolve Claim”]
