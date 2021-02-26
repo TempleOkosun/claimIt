@@ -3,7 +3,7 @@
 A blockchain solution for car accident insurance claim based on
 hyperledger fabric. <br>
 
-Description 
+<h3> Description </h3>
 1. An insuree reports an accident (<=7 days) <br>
 2. A broker, agent or insurance company provides requested information <br>
 3. A broker submits a claim to an issuer <br>
@@ -13,23 +13,23 @@ Description
 
 ![alt text](state_diag_claimIt.png?raw=true) <br>
 
-Car Accident Insurance Claim modeling <br>
-<em> A.  State Data </em> <br>
-States: [“No accident”, “Claim Started”, “Claim Awaiting Submission”, “Claim Approved”, “Resolve Claim”] <br>
+<h3>Car Accident Insurance Claim modeling </h3>
+<h4> A.  State Data </h4>
+States: <strong> [“No accident”, “Claim Started”, “Claim Awaiting Submission”, “Claim Approved”, “Resolve Claim”]</strong><br>
 
 State: 0 <br>
 
 Insuree: { Name: ‘’”, Policy Number: “”, Address: “”, Insurer: “” } <br>
 
-Car Details: { Car Make: “” Car Model: “” Car Year: “”, Registration:
-“”, License No.: “” } <br>
+Car Details: { Car Make: “” Car Model: “” Car Year: “”, Registration: “”, License No.: “” } <br>
 
 Driver: { Driver Name: “”, License No.: “” } <br>
 
-Passenger: [Name: “”] Accident Details: { Driver Name: ‘’, License No.:
-“” Date: “”, Time: “”, Location: “”, Description: “” } <br>
+Passenger: [Name: “”] <br>
 
-<em> B. Transitions </em>
+Accident Details: { Driver Name: ‘’, License No.:“” Date: “”, Time: “”, Location: “”, Description: “” } <br>
+
+<h4> B. Transitions </h4>
 <ol>
     <li> ReportAccident (Name, Address) </li>
     <li> ProvideInformation (Insuree, Car, Driver, Passenger, Accident Details) </li>
@@ -39,7 +39,7 @@ Passenger: [Name: “”] Accident Details: { Driver Name: ‘’, License No.:
     <li> Reject(Name) </li>
 </ol>
 
-<em> C. Functions </em>
+<h4> C. Functions </h4>
 <ul>
     <li> CheckStatus (Name) </li>
     <li> CheckRule (Name, Date, Location) </li>
@@ -47,7 +47,7 @@ Passenger: [Name: “”] Accident Details: { Driver Name: ‘’, License No.:
 </ul>
 
 
-<em> D. Roles </em>
+<h4> D. Roles </h4>
 <ul> 
     <li> ReportAccident - Insuree  </li>
     <li> ProvideInformation - Insuree  </li>
