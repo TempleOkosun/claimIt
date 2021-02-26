@@ -21,22 +21,22 @@ State: 0 <br>
 
 Insuree: { Name: ‘’”, Policy Number: “”, Address: “”, Insurer: “” } <br>
 
-Car Details: { Car Make: “” Car Model: “” Car Year: “”, Registration: “”, License No.: “” } <br>
+Car Details: { Car Make: “”, Car Model: “”, Car Year: “”, Registration: “”, License No.: “” } <br>
 
 Driver: { Driver Name: “”, License No.: “” } <br>
 
-Passenger: [Name: “”] <br>
+Passengers: ["Passenger Name", ] <br>
 
-Accident Details: { Driver Name: ‘’, License No.:“” Date: “”, Time: “”, Location: “”, Description: “” } <br>
+Accident Details: { Driver Name: "", License No.:“”, Date: “”, Time: “”, Location: “”, Description: “” } <br>
 
 <h4> B. Transitions </h4>
 <ol>
     <li> ReportAccident (Name, Address) </li>
     <li> ProvideInformation (Insuree, Car, Driver, Passenger, Accident Details) </li>
-    <li> Incomplete(Name) </li>
+    <li> Incomplete (Name) </li>
     <li> SubmitClaim (Insuree, Amount Covered) </li>
-    <li> Approve(Name, Amount) </li>
-    <li> Reject(Name) </li>
+    <li> Approve (Name, Amount) </li>
+    <li> Reject (Name) </li>
 </ol>
 
 <h4> C. Functions </h4>
